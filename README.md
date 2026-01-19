@@ -151,4 +151,4 @@ A website that is:
 * Responsive
 * Clean
 * Faithful to the design
-* Perfect for the frontend portfolio# AirBnB__Clone
+* Perfect for the frontend portfolio
