@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AirBnB Clone</title>
+    <!-- Imported from Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
@@ -13,8 +21,45 @@
 
 </head>
 <body>
-    
-    <!-- JS file -->
+    <header class="navbar">
+        <div class="nav-container">
+           <a href="https://www.airbnb.com/" class="logo">
+            <img src="assets/icons/airbnb.svg" alt="Logo">
+           </a>
+
+           <nav class="nav-links">
+            <ul>
+                <li><a href="#">Stays</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Online Experiences</a></li>
+            </ul>
+           </nav>
+
+           <div class="actions">
+                <button>
+                    <i class="fa fa-globe"></i>
+                </button>
+            
+                <button>
+                    <i class="fa fa-bars"></i>
+                </button>
+           </div>
+        </div>
+
+        <div class="hamburger-menu">
+            <!-- Contains host services and log in/sign up -->
+        </div>
+
+        <div class="search-bar">
+            <input type="search" id="site-search" name="query">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+    </header>
+
+
+    <!-- JS Link-->
     <script defer src="js/main.js"></script>
 </body>
 </html>
