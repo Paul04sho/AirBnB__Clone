@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* RESET CSS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg,
+canvas,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+:root {
+    /* 🎨 Colors */
+    --color-primary: #ff385c;
+    --color-black: #222222;
+    --color-gray-dark: #717171;
+    --color-gray: #b0b0b0;
+    --color-gray-light: #ebebeb;
+    --color-bg: #ffffff;
+    --color-bg-section: #f7f7f7;
+  
+    /* ✍️ Typography */
+    --font-main: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-md: 16px;
+    --text-lg: 18px;
+    --text-xl: 22px;
+  
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+  
+    /* 📐 Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    --space-xxl: 48px;
+  
+    /* 📦 Layout */
+    --container-max-width: 1600px;
+    --container-padding: 80px;
+  
+    /* 🔲 Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 24px;
+    --radius-full: 999px;
+  
+    /* 🌫️ Shadows */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+  
+    /* ⚡ Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+  }
+
+  body {
+    font-family: var(--font-main);
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  
