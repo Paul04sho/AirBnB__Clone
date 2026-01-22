@@ -23,10 +23,13 @@
 <body>
     <header class="navbar">
         <div class="nav-container">
-           <a href="https://www.airbnb.com/" class="logo">
-            <img src="assets/icons/airbnb.svg" alt="Logo">
-            <h1 class="navbar-title">airbnb</h1>
-           </a>
+
+           <div class="nav-left">
+            <a href="index.html" class="logo">
+                <img src="assets/icons/airbnb.svg" alt="Logo">
+                <h1 class="navbar-title">airbnb</h1>
+              </a>
+           </div>
 
            <nav class="nav-center">
             <ul>
@@ -37,7 +40,7 @@
            </nav>
 
            <div class="nav-right">
-               <p class="navbar-slogan">Airbnb your home</p>
+               <span class="navbar-slogan">Airbnb your home</span>
                     <button>
                         <i class="fa fa-globe"></i>
                     </button>
@@ -51,13 +54,49 @@
 
         <div class="search-container">
             <div class="search-bar">
-                <div class="search-item">Where</div>
-                <div class="divider"></div>
-                <div class="search-item">Check in</div>
-                <div class="divider"></div>
-                <div class="search-item">Check out</div>
-                <div class="divider"></div>
-                <div class="search-item">Who</div>
+                <div class="search-items">
+                    <div class="search-item where">
+                        <button>Where</button>
+                        <div class="location-map">
+                            <h3>Search by region</h3>
+                            <div class="card">
+                                <img src="assets/images/world-map.jpg" alt="World Map">
+                                <p>I'm flexible</p>
+                            </div>
+
+                            <div class="card">
+                                <img src="assets/images/europe-map.webp" alt="Europe Map">
+                                <p>Europe</p>
+                            </div>
+
+                            <div class="card">
+                                <img src="assets/images/thailand-map.png" alt="Thailand Map">
+                                <p>Thailand</p>
+                            </div>
+
+                            <div class="card">
+                                <img src="assets/images/asia-map.webp" alt="Southeast Asia Map">
+                                <p>Southeast Asia</p>
+                            </div>
+
+                            <div class="card">
+                                <img src="assets/images/indonesia-map.webp" alt="Indonesia Map">
+                                <p>Indonesia</p>
+                            </div>
+
+                            <div class="card">
+                                <img src="assets/images/middle-east-map.webp" alt="Indonesia Map">
+                                <p>Middle East</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="search-item check">Check in</div>
+                    <div class="divider"></div>
+                    <div class="search-item check">Check out</div>
+                    <div class="divider"></div>
+                    <div class="search-item">Who</div>
+                </div>
                 
                 <button class="search-btn">
                     <i class="fa fa-search"></i>
