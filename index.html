@@ -23,12 +23,15 @@
 <body>
     <header class="navbar">
         <div class="nav-container">
-           <a href="https://www.airbnb.com/" class="logo">
-            <img src="assets/icons/airbnb.svg" alt="Logo">
-            <h1 class="navbar-title">airbnb</h1>
-           </a>
 
-           <nav class="nav-links">
+           <div class="nav-left">
+            <a href="index.html" class="logo">
+                <img src="assets/icons/airbnb.svg" alt="Logo">
+                <h1 class="navbar-title">airbnb</h1>
+              </a>
+           </div>
+
+           <nav class="nav-center">
             <ul>
                 <li><a class="link active" href="#">Stays</a></li>
                 <li><a class="link" href="#">Experiences</a></li>
@@ -36,30 +39,168 @@
             </ul>
            </nav>
 
-           <p class="navbar-slogan">Airbnb your home</p>
-
-           <div class="actions">
-                <button>
-                    <i class="fa fa-globe"></i>
-                </button>
-            
-                <button>
-                    <i class="fa fa-bars"></i>
-                </button>
+           <div class="nav-right">
+               <span class="navbar-slogan">Airbnb your home</span>
+                    <button>
+                        <i class="fa fa-globe"></i>
+                    </button>
+               
+                    <button>
+                        <i class="fa fa-bars"></i>
+                    </button>
            </div>
+          
         </div>
 
-        <div class="hamburger-menu">
-            <!-- Contains host services and log in/sign up -->
-        </div>
-
-        <div class="search-bar">
-            <input type="search" id="site-search" name="query">
-            <button>
-                <i class="fa fa-search"></i>
-            </button>
+        <div class="search-container">
+            <div class="search-bar">
+                <div class="search-items">
+                    <div class="search-item where">Where</div>
+                    <div class="divider"></div>
+                    <div class="search-item check">Check in</div>
+                    <div class="divider"></div>
+                    <div class="search-item check">Check out</div>
+                    <div class="divider"></div>
+                    <div class="search-item">Who</div>
+                </div>
+                
+                <button class="search-btn">
+                    <i class="fa fa-search"></i>
+                  </button>
+            </div>
         </div>
     </header>
+
+    <main class="main-content">
+        <section class="grid-container">
+            <!-- cards -->
+            <div class="grid-item">
+                <div class="img-container">
+                    <span class="badge">Guest Favourite</span>
+                    <img src="assets/images/portugal.jpg" alt="Ponta Degalda">
+                </div>
+                <div class="description">
+                    <div class="desc_location">
+                        <h3>Ponta Degalda, Portugal</h3>
+                        <span class="ratings">
+                            <i class="fa fa-star"></i>
+                            4.33
+                        </span>
+                    </div>
+                    <p>
+                        2,321 kilometers away <br>
+                        18-25 Jun
+                    </p>
+                    <span class="price">
+                        <b>$33</b> for 1 night
+                    </span>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="grid-item">
+                <div class="img-container">
+                    <span class="badge">Guest Favourite</span>
+                    <img src="assets/images/finland.jpg" alt="Finland">
+                </div>
+                <div class="description">
+                    <div class="desc_location">
+                        <h3>Tiny Home, Finland</h3>
+                        <span class="ratings">
+                            <i class="fa fa-star"></i>
+                            4.8
+                        </span>
+                    </div>
+                    <p>
+                        5,664 kilometers away <br>
+                        16-21 Jun
+                    </p>
+                    <span class="price">
+                        <b>$79</b> for 1 night
+                    </span>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="grid-item">
+                <div class="img-container">
+                    <span class="badge">Guest Favourite</span>
+                    <img src="assets/images/estonia.jpg" alt="Estonia">
+                </div>
+                <div class="description">
+                    <div class="desc_location">
+                        <h3>Cabin Lohusalu, Estonia</h3>
+                        <span class="ratings">
+                            <i class="fa fa-star"></i>
+                            4.33
+                        </span>
+                    </div>
+                    <p>
+                        2,011 kilometers away <br>
+                        18-19 Jul
+                    </p>
+                    <span class="price">
+                        <b>$75</b> for 1 night
+                    </span>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="grid-item">
+                <div class="img-container">
+                    <span class="badge">Guest Favourite</span>
+                    <img src="assets/images/romania.jpg" alt="Romania">
+                </div>
+                <div class="description">
+                    <div class="desc_location">
+                        <h3>Oraşul Sovata,Romania</h3>
+                        <span class="ratings">
+                            <i class="fa fa-star"></i>
+                            4.8
+                        </span>
+                    </div>
+                    <p>
+                        2,331 kilometers away <br>
+                        8-16 May
+                    </p>
+                    <span class="price">
+                        <b>$81</b> for 1 night
+                    </span>
+                </div>
+            </div>
+            
+            <!-- cards -->
+            <div class="grid-item">
+                <div class="img-container">
+                    <span class="badge">Guest Favourite</span>
+                    <img src="assets/images/greece.jpg" alt="Romania">
+                </div>
+                <div class="description">
+                    <div class="desc_location">
+                        <h3>Home in Greece</h3>
+                        <span class="ratings">
+                            <i class="fa fa-star"></i>
+                            4.33
+                        </span>
+                    </div>
+                    <p>
+                        5641 kilometers away <br>
+                        23-25 Apr
+                    </p>
+                    <span class="price">
+                        <b>$95</b> for 1 night
+                    </span>
+                </div>
+            </div>
+
+            
+        </section>
+        
+        <section class="cta-section">
+            <p>Continue exploring amazing views</p>
+            <button class="cta-btn">Show more</button>
+        </section>
+    </main>
 
 
     <!-- JS Link-->
