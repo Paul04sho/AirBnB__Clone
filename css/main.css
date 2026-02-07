@@ -98,4 +98,9 @@ ol {
 body {
     font-family: var(--font-main);
 }
+
+.main-content {
+    margin-top: var(--space-xxl);
+    padding-top: var(--space-lg);
+}
   
