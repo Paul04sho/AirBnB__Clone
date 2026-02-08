@@ -1,7 +1,11 @@
 /* GRID LAYOUT APPLIED TO THE CARDS CONTAINER */
 .grid-container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+
     display: grid;
-    grid-template-columns: repeat(5, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var( --space-lg);
     /*border: 3px solid;*/
 }
@@ -41,6 +45,24 @@
     box-shadow: var(--shadow-sm);
 }
 
+.img-container .favorite-btn {
+    position: absolute;
+    top: var(--space-sm);
+    right: var(--space-sm);
+
+    background: var(--color-gray-light);
+    padding: 4px 8px;
+    border-radius: var( --radius-full);
+
+    font-size: var(--text-xs);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.favorite-btn:hover {
+    background:  #cccccc;
+}
+
 /* description content styles */
 .description {
     padding-top: var(--space-sm);
@@ -73,7 +95,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: var(--space-xxl);
+    margin: var(--space-xxl);
 }
 
 /* cta text */
@@ -88,5 +110,10 @@
     padding: var(--space-sm) var(--space-lg);
     color: white;
     border: none;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background: #333333;
 }
