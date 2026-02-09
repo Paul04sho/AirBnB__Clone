@@ -1,0 +1,67 @@
+/* MEDIA QUERIES - for good-looking website across devices */
+
+/**
+* Mobile phones breakpoint 
+**/
+@media only screen and (max-width: 480px) {
+    .nav-container {
+        flex-wrap: wrap;
+        padding: var(--space-lg) var(--container-padding);
+    }
+
+    .nav-left,
+    .nav-right {
+        justify-content: center;
+        margin: var(--space-md);
+    }
+
+    .nav-right button {
+        display: none;
+    }
+
+    .search-bar {
+       margin: var(--space-md);
+    }
+
+    .grid-container {
+        justify-items: center;
+    }
+
+    .footer-features,
+    .footer-info {
+        flex-wrap: wrap;
+        padding: var(--space-md) var(--container-padding);
+    }
+
+    .footer-legal {
+     white-space: nowrap;
+     margin-bottom: var(--space-md);
+    }
+
+    .footer-socials {
+        gap: var(--space-lg);
+    }
+}
+
+/**
+* Large phones and tablets breakpoint 
+**/
+@media only screen and (min-width: 768px) {
+    /*.nav-container {
+        justify-content: space-between;
+    }*/
+
+    .footer-features,
+    .footer-info {
+        padding: var(--space-lg) var(--container-padding);
+    }
+
+    .footer-info {
+       gap: var(--space-xxl);
+    }
+
+    .footer-legal,
+    .footer-socials{
+        white-space: nowrap;
+    }
+}

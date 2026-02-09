@@ -53,6 +53,7 @@
 
 .nav-center {
   justify-content: center;
+  white-space: nowrap;
 }
 
 .nav-center ul {
@@ -100,7 +101,7 @@
   /*border: 4px solid;*/
   display: flex;
   justify-content: center;
-  padding: var(--space-xl) 0;
+  padding: var(--space-md);
 }
 
 .search-bar {
