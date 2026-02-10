@@ -13,12 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    margin: 0 80px;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
 img,
 picture,
 svg,
@@ -97,14 +91,19 @@ ol {
 
 body {
     font-family: var(--font-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+
     display: flex;
     flex-direction: column; /* stacks children vertically */
     min-height: 100vh;  /* Ensures the body is at least the full height of the viewport */
+
+    margin: 0;
 }
 
+/* natural wrapper of the overall content */
 .main-content {
-    margin-top: var(--space-xxl);
-    padding-top: var(--space-lg);
-    flex-grow: 1;  /* Allows the main content to take up all remaining vertical space */
+    flex: 1;  /* Allows the main content to take up all remaining vertical space */
+    padding-top: var(--space-xl);
 }
   

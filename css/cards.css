@@ -1,8 +1,10 @@
+
 /* GRID LAYOUT APPLIED TO THE CARDS CONTAINER */
 .grid-container {
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 0 var(--container-padding);
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -66,7 +68,6 @@
 /* description content styles */
 .description {
     padding-top: var(--space-sm);
-    margin-left: var(--space-sm);
     /*border: 4px solid yellow;*/
 }
 

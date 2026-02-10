@@ -16,8 +16,9 @@ footer {
 /* top section */
 .footer-features {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: var(--space-xxl);
+    gap: var(--space-xl);
     border-bottom: 2px solid var(--color-gray-light);
 }
 
@@ -41,8 +42,10 @@ footer {
 /* bottom section */
 .footer-info {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
+    gap: var(--space-md);
     font-size: var(--text-sm);
 }
 
