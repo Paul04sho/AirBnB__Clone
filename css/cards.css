@@ -65,6 +65,14 @@
     background:  #cccccc;
 }
 
+#heart {
+    color: var(--color-gray);
+}
+
+#heart.red {
+    color: red;
+}
+
 /* description content styles */
 .description {
     padding-top: var(--space-sm);
