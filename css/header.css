@@ -12,6 +12,7 @@
   
   display: flex;
   align-items: center;
+  gap: var(--space-xl);
 }
 
 .logo img {
@@ -27,16 +28,29 @@
 
 .fa-globe,
 .fa-bars {
-  background: var(--color-gray);
-  color: white;
+  background: var(--color-gray-light);
+  color: var(--color-black);
   padding: var(--space-sm);
   border-radius: var( --radius-full);
 }
 
 .fa-globe:hover,
 .fa-bars:hover {
-  background: #909090;
+  background: #cccccc;
 }
+
+.fa-globe {
+  color: transparent; /* Makes the center fill empty */
+  -webkit-text-stroke-width: 1px; /* Defines the thickness of the outline */
+  -webkit-text-stroke-color: #333; /* Sets the outline color */
+}
+
+.fa-bars {
+  color: black; /* The desired color of your bars */
+  -webkit-text-stroke-width: 0.5px; /* Adjust the stroke width to "trim" the edges */
+  -webkit-text-stroke-color: white; /* The background color of the element */
+}
+
 
 .navbar-title {
   color: var(--color-primary);
@@ -85,6 +99,7 @@
 
 .navbar-slogan {
   font-size: var(--text-sm);
+  white-space: nowrap;
 }
 
 .nav-right {
@@ -179,4 +194,24 @@
 
 .search-btn:hover {
   background: #e03050;
+}
+
+/* Hamburger menu */
+.hamburger {
+  position: relative;
+}
+
+.fade-in-menu {
+  display: none;
+  z-index: 99;
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  background: var(--color-gray-light);
+  padding: var(--space-lg);
+}
+
+.fade-in-menu li {
+  margin-bottom: var(--space-sm);
+  border-bottom: 1px solid black;
 }
